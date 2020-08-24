@@ -6,6 +6,41 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./CSS/styles.css">
+
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded" , () =>{
+
+        var BtnMenu = document.getElementById("BtnMenu");
+        var BtnCloseMenu = document.getElementById("BtnCloseMenu");
+        var Nav = document.getElementById("nav");
+        
+        BtnMenu.addEventListener("click", () => {
+           Nav.classList.add("show-menu");
+           BtnMenu.style.cssText= "display:none;";
+           BtnCloseMenu.style.cssText= "display:block; margin-top:5px;";
+        });
+
+        BtnCloseMenu.addEventListener("click", () => {
+           Nav.classList.remove("show-menu");
+           BtnCloseMenu.style.cssText= "display:none;";
+           BtnMenu.style.cssText= "display:block; margin-top:5px;";
+        });
+           
+        window.addEventListener("resize" , () => {
+          if(window.innerWidth > 768){
+            BtnMenu.style.cssText= "display:none;";
+            BtnCloseMenu.style.cssText= "display:none; ";
+            Nav.classList.remove("show-menu");
+          }
+        });
+
+
+      } );
+
+    </script>
+
 </head>
 <body>
     
@@ -17,14 +52,15 @@
   <h1>Plafones React</h1>
 </header>
 
-<nav class="nav">
-   <button class="BtnMenu" >Menú</button>
-   <button class="BtnClose" >X</button>
+<nav class="nav" id="nav">
    <a>Inicio</a>
    <a>Productos</a>
    <a>Sucursales</a>
    <a>Contacto</a>
    <a>Requieres Instalación</a>
+
+   <button class="BtnMenu"  id="BtnMenu">Menú</button>
+   <button class="BtnClose"  id="BtnCloseMenu">X</button>
 </nav>
 
 

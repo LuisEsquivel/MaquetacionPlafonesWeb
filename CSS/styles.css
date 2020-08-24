@@ -18,12 +18,30 @@ body{
 }
 
 .BtnMenu{
-    display: none;
+    display: flex ;
+    margin-left: auto;
+    margin-right: 50px;
+    border: none;
+    font-size: 20px;
+    color: teal;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: -20px;
 }
 
 .BtnClose{
-    display: none;
+    display: flex ;
+    margin-left: auto;
+    margin-right: 50px;
+    border: none;
+    font-size: 20px;
+    color: teal;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: -20px;
 }
+
+
 
  .titles{
     grid-column: 1/-1;
@@ -65,6 +83,7 @@ body{
   color: tomato;
   cursor: pointer;
 }
+
 
 .title{
     grid-column: 1/-1;
@@ -173,15 +192,12 @@ body{
     display: flex;
     justify-content: center;
     color: aliceblue;
-    
+    width: 100%;
 }
 
 
 @media (max-width : 992px) and (min-width : 769px){
         
-
-
-
       /*Sucursales, Aside And Servicios Number Rows and Columns */
     .sucursales  .aside  .servicios{
         grid-column: 1/-1;
@@ -292,11 +308,17 @@ body{
     .banners > div > img{
         object-fit: scale-down;
     }
+
+
+    .footer{
+        width:  100%;
+        margin-top: 50px;
+    }
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (max-width: 768px) and (min-width : 302px) {
+@media (max-width: 768px) {
 
 
    .container{
@@ -315,6 +337,11 @@ body{
 
     .nav{
         width: 95%;
+    }
+
+    .footer{
+        width:  100%;
+        margin-top: 50px;
     }
 
     .container > .title{
@@ -360,17 +387,13 @@ body{
     }
 
          
-    .nav{
+    .nav > a{
         display: none;
-        flex-direction: column;
-        height: 250px;
-        text-align: center;
-
     }
 
 
     .banners > div > img{
-        object-fit: scale-down;
+        object-fit: contain;
     }
 
 
@@ -382,6 +405,7 @@ body{
         color: teal;
         font-weight: bold;
         font-size: 25px;
+        margin-top: 10px;
     }
 
     .BtnMenu:hover{
@@ -394,30 +418,14 @@ body{
   
 
 
-
-@media (max-width : 301px){
-
-
-    .header{
-        width: 96%;
-    }
-    .title{
-        width: 96%;
-    }
-    .nav{
-        width: 96%;
-    }
-
-    .aside {
-       width: 99%;
-       padding-left: 22px;
-    }
-
-    .aside > div > img{
-     width: 100%;
-    }
-
+.show-menu{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    text-align: center;
 }
+
+
 
     
     
