@@ -12,9 +12,12 @@
     var Nav = document.getElementById("nav");
     var NavLink = document.getElementById("nav-link");
 
+    BtnMenu.style.cssText = "display:none;";
+    BtnCloseMenu.style.cssText = "display:none;";
+
     BtnMenu.addEventListener("click", () => {
       Nav.classList.add("show-menu");
-      Nav.style.cssText = "height:150px;";
+      Nav.style.cssText = "height:180px !important;";
       BtnMenu.classList.remove("nav-buttons-menu");
       BtnMenu.style.cssText = "display:none;";
       BtnCloseMenu.classList.add("nav-buttons-menu"); 
@@ -25,7 +28,7 @@
       BtnCloseMenu.classList.remove("nav-buttons-menu");
       BtnCloseMenu.style.cssText = "display:none;";
       BtnMenu.classList.add("nav-buttons-menu");    
-      Nav.style.cssText = "height:50px;";
+      Nav.style.cssText = "height:70px !important;";
       NavLink.style.cssText = "margin-left:15px;";
     });
 
@@ -35,7 +38,7 @@
       if (innerWidth > 768) {
 
         Nav.classList.remove("show-menu");
-        Nav.style.cssText = "height:50px;";
+        Nav.style.cssText = "height:70px !important;";
         BtnMenu.classList.remove("nav-buttons-menu");
         BtnMenu.style.cssText = "display:none;";
         BtnCloseMenu.classList.remove("nav-buttons-menu");
@@ -55,6 +58,8 @@
 
 
     window.onload = () => {
+      BtnMenu.style.cssText = "display:none;";
+      BtnCloseMenu.style.cssText = "display:none;";
       ResizeEvent(window.InnerWidth)
     }
 

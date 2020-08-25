@@ -18,6 +18,7 @@ body{
 }
 
 
+
 /**Buttons Menu And (X)*/
 .nav-buttons-menu{
     display: block !important;
@@ -38,9 +39,24 @@ body{
     transform: rotate(20deg);
 }
 
-.nav > div > a{
-    margin-left: 20px;
+
+/*DECORATION TARGET a in UL > LI > A*/
+ .nav > ul > li > a{
+    text-decoration: none;
+    color: teal;
+    margin-left: 15px;
 }
+
+.nav-link{
+    padding-right: 15px;
+}
+
+/*DECORATION TARGET a in UL > LI > UL > LI > A*/
+.nav > ul > li >  ul > li a{
+    text-decoration: none;
+    color: teal;
+}
+
 
  .titles{
     grid-column: 1/-1;
@@ -64,24 +80,29 @@ body{
 
 .nav{
     grid-column: 1/-1;
-    height: 60px;
-    padding-left: 20px;
-    padding-top: 20px;
+    height: 70px !important;
+    padding-top: -20px;
     background-color: gainsboro;
     font-weight: bold;
-}
-
-.nav > .nav-link > a {
     text-decoration: none;
     color: teal;
     font-size: 20px;
 }
 
 
-.nav > .nav-link > a:hover{
-  color: tomato;
-  cursor: pointer;
+.nav > .nav-link >  ul > li > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: teal;
+    margin-left: 15px;
 }
+
+
+
+.nav > .nav-link ul > li > a:hover{
+    color: tomato;
+    cursor: pointer;
+  }
 
 
 .title{
@@ -116,10 +137,39 @@ body{
 .show-menu .nav-link{
     display: flex;
     flex-direction: column;
-    text-align: center;
     visibility: visible;
+    margin-top: 20px;
   }
 
+
+
+
+li {
+    float: left;
+    display: block;
+    position: relative;
+    list-style: none;
+}
+
+ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    display: none;
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0px;
+    background: white;
+}
+
+li:hover > ul {
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 
 
@@ -138,7 +188,7 @@ body{
     }
 
     .nav{
-        width: 95%;
+        width: 100%;
     }
 
     .nav-link{
@@ -170,6 +220,19 @@ body{
   }
 
 
+  ul ul {
+    position: absolute;
+    left: 120px;
+    top: 100%;
+    background: white;
+    display: none;
+}
+
+a {
+    display: block;
+ }
+
+ 
 }
 
     
