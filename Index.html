@@ -1,194 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="./CSS/styles.css">
-
-
-    <script>
-
-      document.addEventListener("DOMContentLoaded" , () =>{
-
-        var BtnMenu = document.getElementById("BtnMenu");
-        var BtnCloseMenu = document.getElementById("BtnCloseMenu");
-        var Nav = document.getElementById("nav");
-        
-        BtnMenu.addEventListener("click", () => {
-           Nav.classList.add("show-menu");
-           BtnMenu.style.cssText= "display:none;";
-           BtnCloseMenu.style.cssText= "display:block; margin-top:5px;";
-        });
-
-        BtnCloseMenu.addEventListener("click", () => {
-           Nav.classList.remove("show-menu");
-           BtnCloseMenu.style.cssText= "display:none;";
-           BtnMenu.style.cssText= "display:block; margin-top:5px;";
-        });
-           
-        window.addEventListener("resize" , () => {
-          if(window.innerWidth > 768){
-            BtnMenu.style.cssText= "display:none;";
-            BtnCloseMenu.style.cssText= "display:none; ";
-            Nav.classList.remove("show-menu");
-          }
-        });
-
-
-      } );
-
-    </script>
+  <link rel="stylesheet" href="./CSS/global.css">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <script src="./JS/global.js"></script>
 
 </head>
+
 <body>
-    
-    
-<div class="container">
 
 
-<header class="header">
-  <h1>Plafones React</h1>
-</header>
+  <div class="container">
 
-<nav class="nav" id="nav">
-   <a>Inicio</a>
-   <a>Productos</a>
-   <a>Sucursales</a>
-   <a>Contacto</a>
-   <a>Requieres Instalación</a>
 
-   <button class="BtnMenu"  id="BtnMenu">Menú</button>
-   <button class="BtnClose"  id="BtnCloseMenu">X</button>
-</nav>
+    <header class="header">
+      <h1>Plafones React</h1>
+    </header>
+
+    <nav class="nav" id="nav">
+
+      <button class="BtnMenu" id="BtnMenu">Menú</button>
+      <button class="BtnClose" id="BtnCloseMenu">X</button>
+
+      <div class="nav-link" id="nav-link">
+        <a href="index.html">Inicio</a>
+        <a>Productos</a>
+        <a href="sucursales.html">Sucursales</a>
+        <a>Contacto</a>
+        <a>Requieres Instalación</a>
+      </div>
+
+
+    </nav>
 
 
     <div class="title">
       <h3>TablaRoca, Plafón y Durock en Monterrey</h3>
     </div>
 
-    
+
     <aside class="aside">
 
- 
-        <div class="a1">
-          <img src="./IMG/NewIndex/tableros.jpg" alt="">
-          <h1>Tableros</h1>
+
+      <div class="a1">
+        <img src="./IMG/NewIndex/tableros.jpg" alt="">
+        <h1>Tableros</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nobis.</p>
-        </div>
+      </div>
 
-        <div class="a2">
-            <img src="./IMG/NewIndex/plafones.jpg" alt="">
-       <h1>Plafones</h1>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
+      <div class="a2">
+        <img src="./IMG/NewIndex/plafones.jpg" alt="">
+        <h1>Plafones</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
 
-        <div class="a3">
-                <img src="./IMG/NewIndex/Durock.jpg" alt="">    
+      <div class="a3">
+        <img src="./IMG/NewIndex/Durock.jpg" alt="">
         <h1>Durock</h1>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              </div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </div>
 
-        <div class="a4">
-           <img src="./IMG/NewIndex/herramienta.jpg" alt="">  
-           <h1>Herramientas</h1>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
+      <div class="a4">
+        <img src="./IMG/NewIndex/herramienta.jpg" alt="">
+        <h1>Herramientas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
 
- 
+
     </aside>
 
 
-   
 
-   
+
+
     <div class="banners">
 
-        <div class="envio-gratis">
-            <img src="./IMG/NewIndex/envio.png" alt="">
-          <h2>Envío gratis arriba de $1900...</h3>
-        </div>
+      <div class="envio-gratis">
+        <img src="./IMG/NewIndex/envio.png" alt="">
+        <h2>Envío gratis arriba de $1900...</h3>
+      </div>
 
-        <div>
-          <img src="./IMG/NewIndex/usg.jpg" alt="">
-        </div>
+      <div>
+        <img src="./IMG/NewIndex/usg.jpg" alt="">
+      </div>
 
-        <div>
-            <img src="./IMG/NewIndex/bannerserviciomod.jpg" alt="">
-          </div>
+      <div>
+        <img src="./IMG/NewIndex/bannerserviciomod.jpg" alt="">
+      </div>
 
     </div>
-  
 
-   
-   
+
+
+
     <div class="servicios">
 
- 
-        <div class="ser1">
-            <img src="./IMG/NewIndex/igualamospresupuesto.png" alt="">
+
+      <div class="ser1">
+        <img src="./IMG/NewIndex/igualamospresupuesto.png" alt="">
+      </div>
+
+      <div class="ser2">
+        <img src="./IMG/NewIndex/entregaasomicilio.png" alt="">
+      </div>
+
+      <div class="ser3">
+        <img src="./IMG/NewIndex/herramientasesp.png"" alt="">
         </div>
 
-        <div class="ser2">
-            <img src="./IMG/NewIndex/entregaasomicilio.png" alt="">
-        </div>
-
-        <div class="ser3">
-            <img src="./IMG/NewIndex/herramientasesp.png"" alt="">
-        </div>
-
-        <div class="ser4">
-            <img src="./IMG/NewIndex/asesoria.png" alt="">
-        </div>
+        <div class=" ser4">
+        <img src="./IMG/NewIndex/asesoria.png" alt="">
+      </div>
 
 
 
     </div>
 
 
-    
-
-   
 
 
-<div class="titles">Sucursales</div>
- <div class="sucursales">
-  
-  <div class="s1">
-      <img src="./IMG/Sucs/breyes-1-300x214.png" alt="">
-      <h3>Sucursal B.Reyes</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nemo.</p>
+
+
+
+    <div class="titles">Sucursales</div>
+    <div class="sucursales">
+
+      <div class="s1">
+        <img src="./IMG/Sucs/breyes-1-300x214.png" alt="">
+        <h3>Sucursal B.Reyes</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nemo.</p>
+      </div>
+
+      <div class="s2">
+        <img src="./IMG/Sucs/mnieto-1-300x214.png" alt="">
+        <h3>Sucursal Miguel Nieto</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quod!</p>
+      </div>
+
+      <div class="s3">
+        <img src="./IMG/Sucs/valleWEB-300x214.jpg" alt="">
+        <h3>Sucursal Valle</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam.</p>
+      </div>
+
+      <div class="s4">
+        <img src="./IMG/Sucs/lafe-1-300x214.png" alt="">
+        <h3>Sucursal La Fe</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam.</p>
+      </div>
+
+
     </div>
 
-  <div class="s2">
-    <img src="./IMG/Sucs/mnieto-1-300x214.png" alt="">
-    <h3>Sucursal Miguel Nieto</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quod!</p>
-</div>
-  
-<div class="s3">
-    <img src="./IMG/Sucs/valleWEB-300x214.jpg" alt="">
-    <h3>Sucursal Valle</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam.</p>
-</div>
-
-<div class="s4">
-    <img src="./IMG/Sucs/lafe-1-300x214.png" alt="">
-    <h3>Sucursal La Fe</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam.</p>
-</div>
 
 
-    </div>
+    <footer class="footer">
+      <h3>El Footer Plafones React</h3>
+    </footer>
 
+  </div>
 
-
-<footer class="footer">
-  <h3>El Footer Plafones React</h3>
-</footer>
-
-</div>
-   
 </body>
+
 </html>
