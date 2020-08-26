@@ -48,9 +48,8 @@ body{
 }
 
 .nav-link{
-    padding-right: 15px;
+   margin-left: -9px !important;
 }
-
 /*DECORATION TARGET a in UL > LI > UL > LI > A*/
 .nav > ul > li >  ul > li a{
     text-decoration: none;
@@ -99,7 +98,7 @@ body{
 
 
 
-.nav > .nav-link ul > li > a:hover{
+.nav-link ul > li > a:hover{
     color: tomato;
     cursor: pointer;
   }
@@ -228,9 +227,6 @@ li:hover > ul {
     display: none;
 }
 
-a {
-    display: block;
- }
 
  
 }
