@@ -1,11 +1,27 @@
 
 
+:root{
+    --blue: #172C80;
+    --tomato : tomato;
+    --orange : #F08034;
+    --btn-primary :#428BCA;
+    --btn-danger: #d9534f;
+    --btn-success:#5cb85c;
+    --bg-link : teal;
+    --bg-danger: #d9534f;
+    --bg-success: #5cb85c;
+    --text-primary: #428BCA;
+    --text-danger: #d9534f;
+    --text-success:#5cb85c;
+    --headers-color  : #001049;
+    --dark-gray :  #808080;
+}
+
 
 body{
 
     margin: 0 ;
     padding: 0 ;
-    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -59,21 +75,21 @@ body{
 
  .titles{
     grid-column: 1/-1;
-    color: #172C80;
+    color: var(--headers-color);
     font-size: 20px;
     font-weight: bold;
     margin-left: 37px;
     margin-right: 37px;
     margin-top: 37px;
-    border-bottom:solid 5px #172C80;
+    border-bottom:solid 5px var(--blue);
 }
 
 
 .header{
     grid-column: 1/-1 ;
     padding-left: 35px;
-    background-color: #172C80;
-    color: tomato;
+    background-color: var(--blue);
+    color: var(--orange);
 }
 
 
@@ -84,7 +100,7 @@ body{
     background-color: gainsboro;
     font-weight: bold;
     text-decoration: none;
-    color: teal;
+    color: var(--bg-link);
     font-size: 20px;
 }
 
@@ -93,20 +109,19 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: teal;
-    margin-left: 15px;
 }
 
 
 
 .nav-link ul > li > a:hover{
-    color: tomato;
+    color: var(--orange);
     cursor: pointer;
   }
 
 
 .title{
     grid-column: 1/-1;
-    background-color: tomato;
+    background-color: var(--orange);
     color: whitesmoke;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -124,7 +139,7 @@ body{
     margin-top: 120px;
     padding-top: 70px;
     grid-column: 1/-1;
-    background-color: #172C80;
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     color: aliceblue;
@@ -150,6 +165,7 @@ li {
     list-style: none;
 }
 
+
 ul ul {
     position: absolute;
     left: 0;
@@ -168,6 +184,7 @@ li:hover > ul {
     display: block;
     text-decoration: none;
     border-radius: 5px;
+   
 }
 
 
@@ -177,17 +194,16 @@ li:hover > ul {
 
     .container{
         display: grid;
-        grid-template-columns: repeat(1, 100%) ;
+        grid-template-columns: repeat(1, auto) ;
    
     }
   
     .header{
         width: 95%;
-        grid-column: 1/-1;
     }
 
     .nav{
-        width: 100%;
+       width: 100% !important;
     }
 
     .nav-link{
@@ -201,7 +217,12 @@ li:hover > ul {
         text-align: center;
     }
   
- 
+
+    .footer{
+        width:  100%;
+        margin-top: 50px;
+    }
+    
 
   .BtnMenu{
       display: block;
@@ -214,7 +235,7 @@ li:hover > ul {
   }
 
   .BtnMenu:hover{
-      color: tomato;
+      color: var(--orange);
       cursor: pointer;
   }
 

@@ -1,6 +1,21 @@
 
 
-
+:root{
+    --blue: #172C80;
+    --tomato : tomato;
+    --orange : #F08034;
+    --btn-primary :#428BCA;
+    --btn-danger: #d9534f;
+    --btn-success:#5cb85c;
+    --bg-link : teal;
+    --bg-danger: #d9534f;
+    --bg-success: #5cb85c;
+    --text-primary: #428BCA;
+    --text-danger: #d9534f;
+    --text-success:#5cb85c;
+    --headers-color  : #001049;
+    --dark-gray :  #808080;
+}
 
 
 .aside  {
@@ -15,6 +30,11 @@
 
 .aside > div > h1 , p{
     text-align: center;
+    color: var(--headers-color);
+ }
+
+ p{
+     color : var(--dark-gray);
  }
 
 
@@ -80,6 +100,7 @@
      width: 95%;
      padding-left: 37px;
  }
+
 
  .sucursales > div > h3 , p{
     text-align: center;
@@ -218,10 +239,23 @@
 @media (max-width: 768px) {
 
 
-  .footer{
-      width:  100%;
-      margin-top: 50px;
-  }
+    .header{
+        width: 100%;
+    }
+
+    .nav{
+       width: 100%;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+  
+    .footer{
+        width:  100%;
+        margin-top: 50px;
+    }
   
    .sucursales > div{
       grid-column: 1/-1;
