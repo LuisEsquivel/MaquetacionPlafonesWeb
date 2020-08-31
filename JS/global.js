@@ -35,7 +35,7 @@
 
     var ResizeEvent = (InnerWidth) => {
 
-      if (innerWidth > 768) {
+      if (innerWidth > 814) {
 
         Nav.classList.remove("show-menu");
         Nav.style.cssText = "height:70px !important;";
