@@ -11,22 +11,17 @@
 
 .contenido{
     display: grid;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2 , 1fr);
     margin-top: 50px;
+    width: 95%;
+    justify-self: center;
 }
 
-
-.contenido > div > img{
-    border-radius: 7px;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    margin-left: auto;
-}
 
 .subheader{
     grid-column: 1/-1;
+    grid-row: 1;
     width: 100%;
     text-align: center;
 }
@@ -46,18 +41,34 @@
 }
 
 
+.contenido > .img{
+    grid-row: 2;
+    grid-column: 1/2;
+    justify-self: end;
+}
+
+
+
+.contenido > div > img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+
 .formulario{
+    grid-row: 2;
+    grid-column: 2/3;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     justify-self: center;
-    margin-right: 30px;
-    margin-left: 10px;
     padding: 10px 20px 10px 20px;
     border: solid var(--tomato) 2px;
     border-radius: 10px;
     background-color: var(--blue);
     color: white;
+   
 }
 
 
@@ -65,6 +76,7 @@
     border-radius: 5px;
     color: var(--darkgray);
     height: 30px;
+    width: 100%;
     font-size: 20px;
 }
 
@@ -91,7 +103,7 @@
 }
 
 .formulario > button:hover{
- border: soli var(--tomato) 2px;
+ border: solid var(--tomato) 2px;
 }
 
 .formulario > label {
@@ -101,34 +113,26 @@
 
 @media (max-width : 768px){
 
-
-    .contenido{
-        display: grid;
-        grid-template-rows: repeat(3,auto);
-        grid-template-columns: repeat(1 , auto);
-
-    }
     
-
-    .formulario{
-        grid-column: 1/-1;
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-top: 50px;
-        width: 80%;
-        margin-left: 50px;
+    .subheader {
+        grid-row: 1/2;
+        grid-column: 1/-1;  
     }
 
-    .contenido > div{
-        grid-column: 1/-1;
+    .contenido > .img{
+        grid-row: 2/3;
+        grid-column: 1/-1;      
     } 
+
+    .formulario {
+        grid-row: 3/4;
+        grid-column: 1/-1;  
+    }
 
 
     .contenido > div > img{
-        width: 90%;
+        width: 100%;
         height: 100%;
-        padding-left: 35px;
-        margin-left: 0px;
     }
 
 

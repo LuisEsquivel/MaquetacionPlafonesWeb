@@ -29,6 +29,8 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
+
+    column-gap: 20px;
 }
 
 .subheader{
@@ -97,4 +99,5 @@
         width: 100%;
         object-fit: scale-down;
     }
+
 }

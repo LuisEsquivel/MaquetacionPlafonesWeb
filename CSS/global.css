@@ -176,6 +176,9 @@ body{
     display: none;
   }
 
+  nav > ul > li > a:hover{
+    color: var(--tomato);
+  }
 
   nav ul li ul li:hover{
   background-color: yellowgreen;
@@ -189,7 +192,7 @@ body{
     display: block;
   }
 
-
+  
 
 
 
@@ -204,7 +207,9 @@ body{
     }
   
     .header{
-        width: 95%;
+        width: 100%;
+        padding: 0px !important;
+        margin: 0px !important;
     }
 
     .nav{
@@ -219,14 +224,16 @@ body{
 
 
     .title{
-        width: 95%;
+        width: 100%;
         text-align: center;
+        padding: 0px !important;
+        margin: 0px !important;
     }
   
 
     .footer{
         width:  100%;
-        margin-top: 50px;
+        margin-top: 50px !important;
     }
     
 

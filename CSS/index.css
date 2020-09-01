@@ -24,7 +24,7 @@
     grid-auto-flow: column;
     column-gap: 20px;
     width: 95%;
-    padding-left: 37px;
+    justify-self: center;
 }
 
 
@@ -48,8 +48,8 @@
 .banners {
     padding-top: 20px;
     grid-column: 1/-1;
-    padding-left: 37px;
-    padding-right: 37px;
+    width: 95%;
+    justify-self: center;
 }
 
 .banners > div{
@@ -81,13 +81,12 @@
     column-gap: 20px;
     padding-top: 20px;
     width: 95%;
-    padding-left: 37px;
-    
-  }
+    justify-self: center;
+ }
 
   .servicios > div > img{
     width: 100% !important;
-     height: auto !important;
+    height: auto !important;
   }
 
 
@@ -98,7 +97,7 @@
      column-gap: 20px;
      padding-top: 30px;
      width: 95%;
-     padding-left: 37px;
+     justify-self: center;
  }
 
 
@@ -123,24 +122,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr ) ;
    }
-
-   .aside{
-       width: 95%;
-       padding-left: 22px;
-       text-align: center;
-   }
-
-   .sucursales{
-      width: 95%;
-      padding-left: 22px;
-      text-align: center;
-  }
-
-  .servicios{
-      width: 95%;
-      padding-left: 22px;
-      text-align: center;
-  }
 
 
      /*Aside Items*/
@@ -210,22 +191,25 @@
     }
 
 
-   .sucursales > div > img{
-      width: 100%;
-  }
+    .aside > div > img{
+        width: 100%;
+      }
+      
 
-  .aside > div > img{
-      width: 100%;
-  }
-
-  .servicios > div > img{
-      width: 100%;
-  }
+      .servicios > div > img{
+        width: 100%;
+      }
   
 
   .banners > div > img{
       object-fit: scale-down;
   }
+
+
+  .sucursales > div > img{
+    width: 100%;
+}
+
 
 
   .footer{
@@ -243,22 +227,18 @@
         width: 100%;
         text-align: center;
     }
-  
-    .footer{
-        width:  100%;
-        margin-top: 50px;
-    }
+
   
    .sucursales > div{
       grid-column: 1/-1;
       width: 95%; 
+      justify-self: center;
       background-color: lightgray; 
-      text-align: center;
    }
 
 
    .sucursales > div > img{
-     width: 100%;
+     width:  100%;
      object-fit: contain;
     }
 
@@ -266,8 +246,8 @@
   .aside > div{
       grid-column: 1/-1;
       width: 95%;
+      justify-self: center;
       background-color: lightgray; 
-      text-align: center;
   }
 
   .aside > div > img{
@@ -278,16 +258,14 @@
   .servicios > div{
       grid-column: 1/-1;
       width: 95%;
+      justify-self: center;
       background-color: lightgray; 
-      text-align: center;
   }
-
-       
+ 
   
   .banners > div > img{
       object-fit: contain;
   }
-
 
 
 }
