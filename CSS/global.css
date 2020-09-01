@@ -127,6 +127,7 @@ body{
       margin-left: -15px;
       display: grid;
       grid-template-columns: 1/-1;
+      border-bottom: solid 5px var(--tomato);
   }
 
   nav ul li{
@@ -143,6 +144,7 @@ body{
     font-weight: bold;
     color: var(--text-white);
   }
+
 
   nav ul li ul li{
       display: block;
