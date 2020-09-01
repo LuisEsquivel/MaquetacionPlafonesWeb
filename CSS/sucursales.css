@@ -9,9 +9,9 @@
  display: grid;
  grid-auto-flow: column;   
  column-gap: 20px;
- padding-left: 30px;
- padding-right: 30px;
  margin-top: 30px;
+ width: 95%;
+ justify-self: center;
 }
 
 
@@ -36,9 +36,9 @@
 @media (max-width : 768px){
 
     .sucursales{
-        grid-column: 1/-1;
-        display: grid;
         grid-template-columns: repeat(4 , 1fr);
+        width: 90%;
+        justify-self: center;
     }
 
     
@@ -58,7 +58,9 @@
         grid-column: 1/-1;
     }
 
-    .sucursales > div > h3{
+
+
+    .sucursales > div > h3, h2{
         display: flex;
         justify-content: center;
     }
