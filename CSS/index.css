@@ -28,13 +28,15 @@
 }
 
 
-.aside > div > h1 , p{
+.aside > div > h1 , h3{
     text-align: center;
     color: var(--headers-color);
  }
 
  p{
-     color : var(--dark-gray);
+     color : var(--dark-gray) !important;
+     font-size: 20px;
+     text-align: center;
  }
 
 
@@ -101,8 +103,8 @@
  }
 
 
- .sucursales > div > h3 , p{
-    text-align: center;
+ .sucursales > div > div > h3{
+     color: var(--orange);
  }
 
  .sucursales > div > img{
