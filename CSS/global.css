@@ -82,7 +82,8 @@ body{
     column-gap:20px;
 }
 
-.header > div{
+.header > .header-contact{
+  grid-column: 2/3;
  display: flex;
  justify-content: center;
 }
@@ -90,6 +91,11 @@ body{
 
 .header > img{
   object-fit: scale-down;
+}
+
+.header > div{
+  grid-column: 3/4;
+  text-align: center;
 }
 
 .header > div > img{
@@ -254,11 +260,35 @@ body{
    
     }
   
+
     .header{
-        width: 100%;
-        padding: 0px !important;
-        margin: 0px !important;
+      display: grid;
+      grid-template-rows: repeat(3,auto);
+      grid-template-columns: repeat(1, auto);
+      gap:20px;
+  }
+
+     .header > img{
+      grid-column: 1/-1;
+      grid-row: 1;
+      display: flex;
+      justify-self: center;
     }
+
+     .header > .header-contact{
+       grid-column: 1/-1;
+       grid-row: 2;
+       display: flex;
+       justify-self: center;
+     }
+
+     .header > div{
+      grid-column: 1/-1;
+      grid-row: 3;
+      display: flex;
+      justify-self: center;
+    }
+
 
     .nav{
         width: 100% !important;
